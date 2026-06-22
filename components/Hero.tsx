@@ -6,24 +6,20 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen bg-hero-gradient flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen bg-hero-gradient flex items-center justify-center overflow-hidden pt-28 pb-16 sm:pt-32 sm:pb-20"
     >
-      {/* Background Glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-teal/10 blur-3xl" />
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-
-        {/* Avatar */}
         <div
-          className="fade-up w-32 h-32 rounded-full overflow-hidden border border-teal/30 mx-auto shadow-[0_0_40px_rgba(95,227,196,0.18)]"
+          className="fade-up w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden border border-teal/30 mx-auto shadow-[0_0_40px_rgba(95,227,196,0.18)]"
           style={{ animationDelay: "100ms" }}
         >
           <AvatarImage />
         </div>
 
-        {/* Name */}
         <p
           className="fade-up mt-5 text-sm tracking-[0.25em] text-muted2"
           style={{ animationDelay: "250ms" }}
@@ -31,7 +27,6 @@ export default function Hero() {
           UNEEB AHMED
         </p>
 
-        {/* Heading */}
         <h1
           className="fade-up mt-6 text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight text-ink"
           style={{ animationDelay: "400ms" }}
@@ -42,20 +37,18 @@ export default function Hero() {
           </span>
         </h1>
 
-        {/* Description */}
         <p
-          className="fade-up mt-6 max-w-2xl mx-auto text-lg leading-8 text-muted2"
+          className="fade-up mt-6 max-w-2xl mx-auto text-base sm:text-lg leading-7 sm:leading-8 text-muted2"
           style={{ animationDelay: "550ms" }}
         >
-          I'm a final-year BS Information Technology student with professional
-          software development experience. I'm currently learning SQL, Python,
-          PostgreSQL, and Power BI while building practical projects to begin my
-          career as a Data Analyst.
+          I&apos;m a final-year BS Information Technology student with
+          professional software development experience. I&apos;m currently
+          learning SQL, Python, PostgreSQL, and Power BI while building
+          practical projects to begin my career as a Data Analyst.
         </p>
 
-        {/* Buttons */}
         <div
-          className="fade-up mt-10 flex flex-wrap justify-center gap-4"
+          className="fade-up mt-9 flex flex-wrap justify-center gap-4"
           style={{ animationDelay: "700ms" }}
         >
           <a
@@ -74,9 +67,8 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Skills */}
         <div
-          className="fade-up mt-12 flex flex-wrap justify-center gap-3"
+          className="fade-up mt-10 flex flex-wrap justify-center gap-3"
           style={{ animationDelay: "850ms" }}
         >
           {tags.map((tag) => (
@@ -89,16 +81,14 @@ export default function Hero() {
           ))}
         </div>
 
-        {/* Scroll */}
         <a
           href="#about"
-          className="fade-up mt-16 inline-flex flex-col items-center text-muted text-sm hover:text-teal transition"
+          className="fade-up mt-12 inline-flex flex-col items-center text-muted text-sm hover:text-teal transition"
           style={{ animationDelay: "1000ms" }}
         >
           Scroll to explore
           <span className="mt-2 animate-bounce">↓</span>
         </a>
-
       </div>
     </section>
   );
